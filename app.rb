@@ -44,4 +44,9 @@ new_list.all
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
-# new_list.filter("event")
+new_list.filter("event")
+#DEMO FILTER BY LINK TYPE
+#------------------------
+new_list.filter("link")
+#DEMO FILTER BY IMAGE TYPE
+list.filter('image') #Should display image InvalidItemType error 

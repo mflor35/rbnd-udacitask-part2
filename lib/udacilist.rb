@@ -37,9 +37,29 @@ class UdaciList
     end
   end
 
+  def filter(item_type)
+    begin
+      raise UdaciListErrors::InvalidItemType unless valid_type?(item_type)
+      header = "Displaying #{item_type}s from #{@title}"
+      puts "-" * header.length
+      puts header.colorize(:cyan)
+      puts "-" * header.length
+      item_type = item_type.capitalize + "Item"
+      @items.each_with_index do |item, position|
+        if item_type == item.class.to_s
+          puts "#{position + 1}) #{item.details}"
+        end
+      end
+    rescue Exception => message
+      puts "#{item_type} #{message} "
+    end
+  end
+
   private
+
   def valid_type?(type)
     return ['todo','event','link'].include?(type)
   end
+
 
 end
