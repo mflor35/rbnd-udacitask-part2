@@ -2,8 +2,8 @@
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
 
-I decided to use Thor to give the user to create and modify a list from
-the command line.
+Thor: To allow the user to interact with the todo list using cli
+iCalendar: To allow exporting the events to calendar applications
 
 2. Describe the 2 features you added to the project.
   a) Feature 1: command-line interaction
