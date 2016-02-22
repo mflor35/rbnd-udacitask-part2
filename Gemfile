@@ -2,3 +2,5 @@ source 'https://rubygems.org'
 
 gem 'chronic', '0.10.2'
 gem 'colorize', '0.7.7'
+gem 'icalendar', '2.3.0 '
+gem 'thor', '0.19.1'

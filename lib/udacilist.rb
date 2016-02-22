@@ -61,5 +61,8 @@ class UdaciList
     return ['todo','event','link'].include?(type)
   end
 
+  def export_to_ics
+    
+  end
 
 end
