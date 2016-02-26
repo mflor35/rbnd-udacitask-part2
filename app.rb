@@ -11,6 +11,7 @@ require_relative "lib/udacilist"
 require_relative "lib/todo"
 require_relative "lib/event"
 require_relative "lib/link"
+require_relative "lib/udacilistcli"
 
 list = UdaciList.new(title: "Julia's Stuff")
 list.add("todo", "Buy more cat food", due: "2016-02-03", priority: "low")
@@ -53,3 +54,8 @@ new_list.filter("event")
 new_list.filter("link")
 #DEMO FILTER BY IMAGE TYPE
 list.filter('image') #Should display image InvalidItemType error
+#DEMO GEM THOR
+puts "*"*30
+puts "Demo: CLI interaction using Thor gem"
+puts "*"*30
+UdaciListCli.start(ARGV)
