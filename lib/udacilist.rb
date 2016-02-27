@@ -55,14 +55,28 @@ class UdaciList
     end
   end
 
+  def export_to_ics
+      filename = @title.downcase.tr(" ","_")+".ics"
+      cal_file = File.new(filename,'w+')
+      cal = Icalendar::Calendar.new
+      @items.each do |item|
+          # Create a calendar with an event (standard method)
+          if(item.class.to_s == 'EventItem')
+              event = Icalendar::Event.new
+              event.dtstart = item.start_date
+              event.dtend = item.end_date if item.end_date
+              event.description = item.description
+              cal.add_event(event)
+          end
+      end
+      cal_file.write(cal.to_ical)
+      cal_file.close
+  end
+
   private
 
   def valid_type?(type)
     return ['todo','event','link'].include?(type)
-  end
-
-  def export_to_ics
-    
   end
 
 end
