@@ -54,10 +54,5 @@ new_list.filter("event")
 new_list.filter("link")
 #DEMO FILTER BY IMAGE TYPE
 list.filter('image') #Should display image InvalidItemType error
-#DEMO GEM THOR
-# puts "*"*30
-# puts "Demo: CLI interaction using Thor gem"
-# puts "*"*30
-#UdaciListCli.start(ARGV)
 #DEMO EXPORTING EVENTS TO .ICS file
 list.export_to_ics

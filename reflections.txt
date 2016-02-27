@@ -2,16 +2,35 @@
 # -------------------------------------------------------
 1. What is the gem of your choice and how did you use it?
 
-Thor: To allow the user to interact with the todo list using cli
-iCalendar: To allow exporting the events to calendar applications
+    iCalendar: To allow exporting the events to calendar applications
 
 2. Describe the 2 features you added to the project.
-  a) Feature 1: command-line interaction
+  a) Feature 1: change priority level
   b) Feature 2: events to .ics file to use with other calendar software
 
 # REFLECTIONS
 # -------------------------------------------------------
 1. How long did you spend working on this project?
+    I spent around 12 hours working on this project. I found myself forgetting were
+    I left off since I stopped working on the project for a few days.
+
 2. What was the most rewarding challenge you conquered?
+    The most rewarding challenge is being able to run the program with no errors.
+    I also found satisfying being able to use a icalendar gem to export the events
+    to an .ics file. I did not know where to start at first but after spending time
+    reading the documentation I figured something out.
+
 3. What two additional features did you build? Why?
+    Feature 1: The ability to export the events in the todo list to an .ics.
+        I thought it would be an essential feature to integrate with calendar
+        software. I wanted to export the todo list to Google Calendar but the
+        ideas, as of right now, is beyond my understanding.
+
+    Feature 2: I borrowed the idea of changing the priority level of an item.
+
 4. Where do you still have room to grow?
+    I feel I was able to refactor the code very well. I tried to implement most the
+    the suggestion they had given me in previous projects, but I still feel a bit
+    uncomfortable writing one liners. I also think I can do better at being DRY.
+
+    Oh! I also need to work on making sure that my git commits have no spelling errors.

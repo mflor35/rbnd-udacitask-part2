@@ -4,7 +4,6 @@ GEM
     chronic (0.10.2)
     colorize (0.7.7)
     icalendar (2.3.0)
-    thor (0.19.1)
 
 PLATFORMS
   ruby
@@ -13,4 +12,3 @@ DEPENDENCIES
   chronic (= 0.10.2)
   colorize (= 0.7.7)
   icalendar (= 2.3.0)
-  thor (= 0.19.1)

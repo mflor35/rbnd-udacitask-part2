@@ -54,7 +54,7 @@ class UdaciList
       puts "#{item_type} #{message} "
     end
   end
-
+  
   def export_to_ics
       filename = @title.downcase.tr(" ","_")+".ics"
       cal_file = File.new(filename,'w+')
