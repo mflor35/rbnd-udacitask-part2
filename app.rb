@@ -2,7 +2,6 @@ require 'rubygems'
 require 'bundler/setup'
 require 'chronic'
 require 'colorize'
-require 'thor'
 require 'icalendar'
 # Find a third gem of your choice and add it to your project
 require_relative "lib/listable"
