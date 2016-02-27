@@ -52,5 +52,15 @@ new_list.filter("event")
 new_list.filter("link")
 #DEMO FILTER BY IMAGE TYPE
 list.filter('image') #Should display image InvalidItemType error
+puts
+puts "DEMO: Feautures"
+puts
 #DEMO EXPORTING EVENTS TO .ICS file
+puts "Exporting Events to .ics file"
 list.export_to_ics
+puts
+#DEMO CHANGE PRIORITY
+puts "Changing the priority of a todo item"
+list.change_priority(1,"high")
+list.change_priority(2,"low")
+list.all

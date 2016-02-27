@@ -27,8 +27,15 @@ class TodoItem
         format_priority
     end
 
+    def set_priority(new_priority)
+        begin
+            raise UdaciListErrors::InvalidPriorityValue unless valid_priority?
+            @priority = new_priority
+        rescue Exception => message
+            puts message            
+        end
+    end
     private
-
     def valid_priority?
         return ["high","medium","low",nil].include?(@priority)
     end

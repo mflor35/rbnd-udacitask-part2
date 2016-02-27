@@ -70,11 +70,20 @@ class UdaciList
             end
         end
         cal_file.write(cal.to_ical)
+        puts "Events exported to #{filename}"
         cal_file.close
     end
 
-    def change_priority
-
+    def change_priority(index,new_priority)
+        begin
+            raise UdaciListErrors::IndexExceedsListSize unless index < items.count
+            raise UdaciListErrors::InvalidItemType unless @items[index - 1].class.to_s == "TodoItem"
+            puts "Changing priority of todo item #{@items[index - 1].description}"
+            puts "Before: #{@items[index - 1].priority} New: #{new_priority}"
+            @items[index - 1].set_priority(new_priority)
+        rescue Exception => message
+            puts message
+        end
     end
 
     private
